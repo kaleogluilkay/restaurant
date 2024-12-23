@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menü</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Restoran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#men
+                        ">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Rezervasyon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <h1>Hoşgeldiniz!</h1>
+            <p>Lezzetli yemekler burada!</p>
+            <a href="#reservation" class="cta-button">Rezervasyon Yap</a>
+        </div>
+    </section>
+
+    <!-- Menü Sayfası -->
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <h2  class="text-center mb-5">  Menümüz  </h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="./images/pizza.jpeg" alt="Pizza">
+                        <h4>Özel Pizza</h4>
+                        <p>Lezzetli malzemelerle hazırlanmış nefis pizza.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="images/makarna.jpg" alt="Makarnalar">
+                        <h4>Makarnalar</h4>
+                        <p>Klasik ve özel soslu makarna seçenekleri.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="menu-item">
+                        <img src="./images/salata.jpg" alt="Salatalar">
+                        <h4>Salatalar</h4>
+                        <p>Taze ve sağlıklı salata çeşitleri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rezervasyon Formu -->
+    <section id="reservation" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Rezervasyon Yap</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Adınız</label>
+                    <input type="text" class="form-control" id="name" placeholder="Adınızı girin" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-posta</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Tarih</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Saat</label>
+                    <input type="time" class="form-control" id="time" required>
+                </div>
+                <button type="submit" class="btn btn-danger w-100">Rezervasyon Yap</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h3 class="text-center mb-4">İletişim</h3>
+            <p class="text-center">Bizimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz.</p>
+            <div class="text-center">
+                <p><strong>Telefon:</strong> +90 555 123 45 67</p>
+                <p><strong>E-posta:</strong> info@restoran.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 Restoran. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybExdU0XGkvbJXQKkQpU5iSx2RcklM4F9u4I5YkV3pt5R7zF7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0V8FqPrz9tPbP4S6D5V92y3U5qvYlS4+hBse4dpGh/gW2YjD" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
